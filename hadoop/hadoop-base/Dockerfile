@@ -6,7 +6,7 @@ ENV  HADOOP_VERSION 2.10.0
 ENV  HADOOP_INSTALL_DIR /opt/hadoop
 
 # init base os
-RUN sed -i "s/httpredir.debian.org/mirrors.163.com/g" /etc/apt/sources.list
+#RUN sed -i "s/httpredir.debian.org/mirrors.163.com/g" /etc/apt/sources.list
 RUN  apt-get update && \
      apt-get install -y --no-install-recommends curl tar ssh && \
      apt-get clean autoclean && \
